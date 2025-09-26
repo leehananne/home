@@ -1,4 +1,4 @@
-import { DataProjects } from "../data/projects";
+import { DataProjects } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 
 const ProjectList = () => {

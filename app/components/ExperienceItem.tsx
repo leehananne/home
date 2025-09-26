@@ -9,9 +9,19 @@ interface ExperienceProps {
 }
 
 const ExperienceItem = ({role, type, company, dates, imageUrl}: ExperienceProps) => {
-  return (
-    <div>ExperienceItem</div>
-  )
+return (
+    <div className="self-stretch h-24 p-2.5 inline-flex justify-start items-start gap-2.5">
+        <div className="w-8 h-8 bg-white flex justify-center items-center gap-2.5 overflow-hidden">
+            <img className="w-3.5 self-stretch" src={imageUrl} />
+        </div>
+        <div className="inline-flex flex-col justify-start items-start gap-[5px]">
+            <div className="self-stretch justify-start dark:text-white text-dark-grey text-xs font-bold leading-none">{role}</div>
+            <div className="justify-start text-xs font-light leading-none">{type}</div>
+            <div className="justify-start text-xs font-light leading-none">{company}</div>
+            <div className="justify-start text-xs font-light leading-none">{dates}</div>
+        </div>
+    </div>
+    )
 }
 
 export default ExperienceItem

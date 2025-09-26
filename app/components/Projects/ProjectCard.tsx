@@ -1,5 +1,5 @@
 import React from 'react'
-import ViewProjectButton from './ViewProjectButton'
+import ViewProjectButton from '../ViewProjectButton'
 
 interface ProjectCardProps {
   title: string;
