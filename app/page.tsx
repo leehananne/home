@@ -8,6 +8,7 @@ import SkillList from "./components/Tiles/SkillList";
 import LearningList from "./components/LearningLog/LearningList";
 import { Footer } from "./components/Footer";
 import { ProjectCarousel } from "./components/Projects/ProjectCarousel";
+import CtaLink from "./users/CtaLink";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         
         <Heading label="Work"/>
         <ProjectCarousel />
+        <CtaLink link="https://www.google.com" text="View All Projects" />
         
         <Heading label="Education"/>
         <EducationItem organisation="Imperial College London" qualification="Master of Engineering (MEng)" course="Design Engineering" year="2022-2026" imageUrl="https://placehold.co/14x33"/>
@@ -34,6 +36,7 @@ export default function Home() {
 
         <Heading label="Learning Logs" />
         <LearningList />
+        <CtaLink link="https://www.google.com" text="View All Logs" />
       </div>
       <Footer />
     </div>

@@ -24,8 +24,8 @@ const ProjectCard = ({ title, associated, date, imageUrl }: ProjectCardProps) =>
         <div className="w-6 h-6 relative">
             <div className="w-6 h-6 left-0 top-0 absolute">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="size-6 stroke-white">
-              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-            </svg>
+                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
             </div>
         </div>
     </div>
