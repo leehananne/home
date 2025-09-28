@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 
 interface CtaLinkProps {
   link: string;
@@ -10,7 +11,7 @@ interface CtaLinkProps {
 const CtaLink = ({ link, text }: CtaLinkProps) => {
   return (
     <div className='w-full flex justify-end'>
-        <a href={link} className="inline-flex flex-col justify-end items-end gap-2 group relative">
+        <Link href={link} className="inline-flex flex-col justify-end items-end gap-2 group relative">
         <div className="inline-flex justify-end items-center gap-[5px]">
             <div className="text-dark-grey dark:text-white text-sm font-normal leading-none group-hover:font-medium transition-all duration-300">{text}</div>
             <div className="w-3.5 h-3.5 relative">
@@ -22,7 +23,7 @@ const CtaLink = ({ link, text }: CtaLinkProps) => {
             </div>
         </div>
         <div className="w-0 h-0.5 dark:bg-white bg-dark-grey group-hover:w-full transition-all duration-300 ease-out"></div>
-        </a>
+        </Link>
     </div>
     
   )
