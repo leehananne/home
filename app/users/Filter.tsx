@@ -4,17 +4,21 @@ import TagButton from './TagButton';
 
 interface FiltersProps {
   allTags: string[];
+  onTagsChange: (selectedTags: string[]) => void;
 }
 
-const Filters = ({ allTags }: FiltersProps) => {
+const Filters = ({ allTags, onTagsChange }: FiltersProps) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const handleTagClick = (tag: string) => {
+    let newSelectedTags;
     if (selectedTags.includes(tag)) {
-      setSelectedTags(selectedTags.filter((t) => t !== tag));
+      newSelectedTags = selectedTags.filter((t) => t !== tag);
     } else {
-      setSelectedTags([...selectedTags, tag]);
+      newSelectedTags = [...selectedTags, tag];
     }
+    setSelectedTags(newSelectedTags);
+    onTagsChange(newSelectedTags);
   };
 
   return (

@@ -9,7 +9,7 @@ interface SkillTileProps {
 
 const SkillTile = ({name, imageUrl, description}: SkillTileProps) => {
   return (
-    <div className="text-white group w-35 h-35 px-2.5 py-2.5 bg-background dark:hover:bg-white dark:text-black duration-300 ease-in-out inline-flex justify-center items-center gap-2.5 overflow-hidden">
+    <div className="text-white group w-35 h-35 px-2.5 py-2.5 bg-background hover:bg-dark-grey dark:hover:bg-white dark:text-black duration-300 ease-in-out inline-flex justify-center items-center gap-2.5 overflow-hidden">
     <div className="flex-1 self-stretch px-2 flex flex-col justify-center items-center gap-2 overflow-hidden">
         <div className="w-16 h-16 relative overflow-hidden">
             <img src={imageUrl} alt="Figma" className="w-full h-full object-contain" />
