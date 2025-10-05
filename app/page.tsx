@@ -13,7 +13,9 @@ import CtaLink from "./users/CtaLink";
 export default function Home() {
   return (
     <div>
+      <MobileNav />
       <div className="px-10 py-7 flex flex-col justify-center items-center gap-7 w-full md:w-1/2 mx-auto">
+        
         <Profile />
         
         <Heading label="Work"/>
@@ -33,6 +35,7 @@ export default function Home() {
         <LearningList />
         <CtaLink link="https://www.google.com" text="View All Logs" />
       </div>
+      <Footer />
     </div>
   );
 }
