@@ -1,10 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 
 const MobileNav = () => {
   return (
-        <div className="sticky w-full self-stretch px-7 py-5 bg-background border-b border-grey inline-flex justify-between items-center overflow-hidden">
+        <div className="sticky top-0 z-50 w-full self-stretch px-7 py-5 bg-background border-b border-grey inline-flex justify-between items-center overflow-hidden">
         <div className="w-hug self-stretch inline-flex flex-col justify-center items-center gap-2.5">
-            <div className="justify-start text-black dark:text-white text-2xl font-black leading-7">A.</div>
+            <Link href="/" className="justify-start text-black dark:text-white text-2xl font-black leading-7 hover:opacity-70 transition-opacity">A.</Link>
         </div>
         <div className="w-6 h-6 relative">
             <div className="w-6 h-6 left-0 top-0 absolute"></div>

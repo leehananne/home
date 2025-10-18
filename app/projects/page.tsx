@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <div>
       <MobileNav />
-      <div className="px-10 py-7 flex flex-col justify-center items-center gap-7 w-full md:w-2/3 mx-auto">
+      <div className="px-10 py-7 flex flex-col justify-center items-center gap-7 w-full md:w-1/2 mx-auto">
         <Heading label="Work" />
         <Filters 
           allTags={getAllTags()} 

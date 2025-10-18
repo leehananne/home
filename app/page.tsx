@@ -26,7 +26,7 @@ export default function Home() {
         <EducationItem organisation="Imperial College London" qualification="Master of Engineering (MEng)" course="Design Engineering" year="2022-2026" imageUrl="https://placehold.co/14x33"/>
         
         <Heading label="Experience" />
-        <ExperienceItem role="UI/UX Engineer" type='Internship' company="Schroders Personal Wealth" dates="March - September 2025" imageUrl="assets/logos-organisations/schroders.svg"/>
+        <ExperienceItem role="UI/UX Engineer" type='Internship' company="Schroders Personal Wealth" dates="March - September 2025" imageUrl="/assets/logos-organisations/schroders.svg"/>
 
         <Heading label="Skills" />
         <SkillList />
