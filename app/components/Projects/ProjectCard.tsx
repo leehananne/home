@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import ViewProjectButton from '../ViewProjectButton'
-import { StaticImageData } from 'next/image'
 
 interface ProjectCardProps {
   id: string;
@@ -10,7 +9,7 @@ interface ProjectCardProps {
   associated: string;
   date: string;
   sortDate: Date;
-  imageUrl: string | StaticImageData;
+  imageUrl: string;
   pageAddress: string;
 }
 
@@ -18,7 +17,7 @@ const ProjectCard = ({ title, associated, date, imageUrl, pageAddress }: Project
   return (
     <Link href={pageAddress}>
       <div className="w-60 inline-flex flex-col justify-start items-start overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
-        <img className="w-60 h-60 block object-cover" src={typeof imageUrl === 'string' ? imageUrl : imageUrl.src} alt={title} />
+        <img className="w-60 h-60 block object-cover" src={imageUrl} alt={title} />
         <div className="self-stretch px-5 py-4 bg-dark-grey dark:bg-white inline-flex justify-between items-center overflow-hidden">
             <div className="inline-flex flex-col justify-start items-start gap-[3px]">
                   <div className="justify-start text-white dark:text-dark-grey text-sm font-bold font-sans leading-none">{title}</div>

@@ -9,7 +9,6 @@ import LearningList from "./components/LearningLog/LearningList";
 import { Footer } from "./components/Footer";
 import { ProjectCarousel } from "./components/Projects/ProjectCarousel";
 import CtaLink from "./users/CtaLink";
-import { images } from "./assets/images";
 
 export default function Home() {
   return (
@@ -24,10 +23,10 @@ export default function Home() {
         <CtaLink link="projects/" text="View All Projects" />
         
         <Heading label="Education"/>
-        <EducationItem organisation="Imperial College London" qualification="Master of Engineering (MEng)" course="Design Engineering" year="2022-2026" imageUrl="https://placehold.co/14x33"/>
+        <EducationItem organisation="Imperial College London" qualification="Master of Engineering (MEng)" course="Design Engineering" year="2022-2026" imageUrl="/assets/logos-organisations/imperial.jpg"/>
         
         <Heading label="Experience" />
-        <ExperienceItem role="UI/UX Engineer" type='Internship' company="Schroders Personal Wealth" dates="March - September 2025" imageUrl={images.logos.schroders}/>
+        <ExperienceItem role="UI/UX Engineer" type='Internship' company="Schroders Personal Wealth" dates="March - September 2025" imageUrl="/assets/logos-organisations/schroders.svg"/>
 
         <Heading label="Skills" />
         <SkillList />
