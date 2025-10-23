@@ -11,7 +11,7 @@ export default function NestAssured() {
       <div className="px-10 py-7 flex flex-col justify-center items-center gap-7 w-full md:w-2/3 mx-auto">
         <Heading label='Nest Assured'/>
 
-        <img className="block" src="/assets/projects/nest_assured/hero_wide.png" alt="nest-assured-hero" />
+        <img className="block" src="/home/assets/projects/nest_assured/hero_wide.png" alt="nest-assured-hero" />
         <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/iS23X2kF1yc?si=IvX_ml7KBl9l7E3e" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         
         <Heading label='Summary'/>
