@@ -11,7 +11,7 @@ interface ListProps {
 const EducationItem = ({organisation, qualification, course, year, imageUrl}: ListProps) => {
   return (
     <div className="self-stretch h-24 p-2.5 inline-flex justify-start items-start gap-2.5">
-        <div className="w-8 h-8 bg-blue-800 flex justify-center items-center gap-2.5 overflow-hidden">
+        <div className="w-8 h-8 bg-white flex justify-center items-center gap-2.5 overflow-hidden">
             <img className="w-3.5 self-stretch" src={imageUrl} alt={`${organisation} logo`} />
         </div>
         <div className="inline-flex flex-col justify-start items-start gap-[5px]">
