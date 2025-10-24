@@ -1,16 +1,10 @@
-# Summary
+<aside>
 
-## About
-Deliverable for an Industrial Design Engineering project spread across 2 terms, encompassing user research, prototyping and the delivery of a final working product.
+Industrial design project aimed to help young adults with ADHD who struggle with forgetting essential items. After interviewing 6 users and a medical professional, a working plug-and-play item tracker using ultra-high frequency RFID and ESP-NOW technology was developed, branded as a Google Nest solution.
 
-## Problem
-Young adults with ADHD often over-plan to ensure keep structure in their day. Hence, forgetting essential items for their day can consequently exacerbate their condition and lead to feelings of negativity.
+*Google was not engaged in any consultancy or collaborative capacity with this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.*
 
-## Research
-10 young adults with ADHD were interviewed, and a medical professional was consulted to ensure that the product being developed would be beneficial.
-
-## Solution
-A plug-and-play item tracking solution utilising ultra-high frequency RFID and ESP-NOW. We chose Google Nest as the company due to company values and aesthetics.
+</aside>
 
 ---
 

@@ -1,7 +1,9 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
+import rehypeRaw from 'rehype-raw'
 import 'highlight.js/styles/github.css'
+import Callout from './Callout'
 
 interface MarkdownRendererProps {
   content: string
@@ -13,7 +15,7 @@ export default function MarkdownRenderer({ content, className = "" }: MarkdownRe
     <div className={`prose prose-lg max-w-none dark:prose-invert ${className}`}>
       <ReactMarkdown 
         remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeHighlight]}
+        rehypePlugins={[rehypeRaw, rehypeHighlight]}
         components={{
           // Custom component for responsive columns (Notion-like behavior)
           div: ({ className, children }) => {
@@ -87,6 +89,20 @@ export default function MarkdownRenderer({ content, className = "" }: MarkdownRe
           // Custom styling for horizontal rules
           hr: () => (
             <hr className="border-gray-300 dark:border-gray-600 my-8" />
+          ),
+          
+          // Custom styling for aside elements (callouts)
+          aside: ({ children }) => (
+            <Callout 
+              title="Summary" 
+              icon={
+                <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                </svg>
+              }
+            >
+              {children}
+            </Callout>
           ),
           
           // Custom styling for tables
