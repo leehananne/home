@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
   
   // Ensure trailing slash for static hosting
   trailingSlash: true,
+  
+  // Fix turbopack root warning
+  turbopack: {
+    root: process.cwd(),
+  },
 };
 
 export default nextConfig;

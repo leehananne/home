@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "Portfolio of Anne Lee, a Design Engineer",
   icons: {
     icon: [
+      { url: '/home/favicon.ico', sizes: 'any' },
       { url: '/home/icon.svg', type: 'image/svg+xml' },
       { url: '/home/icon-dark.svg', type: 'image/svg+xml', media: '(prefers-color-scheme: dark)' }
     ],
